@@ -1,0 +1,70 @@
+body > div > div.flex{
+    align-items:center; 
+    justify-content:center;
+    height:95vh;
+    display:flex;
+    flex-direction:row;
+}
+.window-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.notif{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+body > div > div.flex > div:nth-child(2){
+    text-align:center;
+}
+body > div:nth-child(1) > div.flex > div:nth-child(2) > h1{
+    color:black;
+    font-weight:800;
+    font-size:3vw;
+    margin-bottom:20px
+}
+body > div:nth-child(1) > div.flex > div:nth-child(2) > span{
+    font-style:normal;
+    font-weight:400;
+    font-size:1.3vw
+}
+
+@media screen and (max-width: 700px) {
+    body > div > div.flex{
+        flex-direction: column;
+    }
+    body > div > div.flex > div:nth-child(2){
+        margin-left: 0px;
+    }
+    body > div:nth-child(1) > div.flex > div:nth-child(1) > img{
+        width: 60%;
+    }
+    body > div:nth-child(1) > div.flex > div:nth-child(2) > h1{
+        font-size: 5vw;
+    }
+    body > div:nth-child(1) > div.flex > div:nth-child(2) > span{
+        font-size: 3vw;
+    }
+    body > div > div.flex > div:nth-child(1){
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-height: 750px) {
+        body > div:nth-child(1) > div.flex > div:nth-child(1) > img{
+            width: 30vh;
+        }
+        body > div:nth-child(1) > div.flex > div:nth-child(2){
+            margin-top: -35px;
+        }
+    }
+}
+@media screen and (max-height: 455px) {
+    body > div:nth-child(1) > div.flex{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 500px){
+    body > div:nth-child(1) > div.container > p{
+        font-size: 2.5vw;
+    }
+}
