@@ -35,16 +35,17 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
+
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <!-- <i class="fas fa-bullhorn"></i> -->
                     <img class="img-profile rounded-circle" width="50px" src="img/dpm.png">
                 </div>
-                <div class="sidebar-brand-text mx-3">SiAspiman</div>
+                <div class="sidebar-brand-text mx-3">Si Aspiman</div>
             </a>
 
             <!-- Divider -->
@@ -55,54 +56,58 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                User
+                DPM
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <div>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="aspirasi.html">
-                        <i class="fas fa-fw fa-bullhorn"></i><span>Aspirasi</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="profile.html">
-                        <i class="fas fa-fw fa-user-edit"></i><span>Edit Profile</span>
-                    </a>
-                </li>
-            </div>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="profile_dpm.html">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Profil DPM</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arsip.html">
+                    <i class="fas fa-fw fa-folder-open"></i>
+                    <span>Arsip Dokumen</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeri.html">
+                    <i class="fas fa-fw fa-image"></i>
+                    <span>Galeri DPM</span>
+                </a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                DPM
+                User
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <div>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="index.html">
-                        <i class="fas fa-fw fa-gavel"></i><span>Beranda</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="profile_dpm.html">
-                        <i class="fas fa-fw fa-users"></i><span>Profil DPM</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="arsip.html">
-                        <i class="fas fa-fw fa-folder-open"></i><span>Arsip Dokumen</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-0" href="galeri.html">
-                        <i class="fas fa-fw fa-image"></i><span>Galeri DPM</span>
-                    </a>
-                </li>
-            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="aspirasi.html">
+                    <i class="fas fa-fw fa-bullhorn"></i>
+                    <span>Aspirasi</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                                        <a class="nav-link" href="profile.html">
+                                            <i class="fas fa-fw fa-user-edit"></i>
+                                            <span>Edit Profile</span>
+                                        </a>
+                                    </li> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -144,22 +149,18 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="user.html">
-                                    <i class="fas fa-fw fa-id-badge mr-2 text-gray-400"></i>
-                                    My Profile
+                                    <i class="fas fa-fw fa-id-badge mr-2 text-gray-400"></i> My Profile
                                 </a>
                                 <a class="dropdown-item" href="profile.html">
-                                    <i class="fas fa-fw fa-user-edit mr-2 text-gray-400"></i>
-                                    Edit Profile
+                                    <i class="fas fa-fw fa-user-edit mr-2 text-gray-400"></i> Edit Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-fw fa-key mr-2 text-gray-400"></i>
-                                    Change Password
+                                    <i class="fas fa-fw fa-key mr-2 text-gray-400"></i> Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="login.html" data-toggle="modal"
                                     data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
                                 </a>
                             </div>
                         </li>
@@ -169,8 +170,9 @@
                 </nav>
                 <!-- End of Topbar -->
 
+                <!-- Begin Main Content -->
+                <div id="main-context">
 
-                <div id="main-context"><!-- Begin Page Content -->
                     <!-- Begin container-fluid -->
                     <div class="container-fluid">
 
@@ -194,16 +196,19 @@
                                 <p class="h5 text-gray-800">Visi</p>
                                 <p>Menjadikan Dewan Perwakilan Mahasiswa Politeknik Statistika STIS sebagai organisasi /
                                     majelis permusyawaratan mahasiswa yang kredibel dalam mengemban tanggung jawab
-                                    secara inspiratif, kontributif, komunikatif dan juga selaras dengan Spiritualitas.
+                                    secara inspiratif, kontributif, komunikatif dan juga selaras
+                                    dengan Spiritualitas.
                                 </p>
                                 <p class="h5 text-gray-800">Misi</p>
                                 <p class="mb-0">1. Melaksanakan penyelenggaraan tugas legislasi secara efektif dan
-                                    efisien.</p>
+                                    efisien.
+                                </p>
                                 <p class="mb-0">2. Menjalin hubungan yang bersinergi dengan pihak internal maupun
                                     eksternal dilingkungan Politeknik Statisika STIS</p>
                                 <p class="mb-0">3. Memberikan kualitas pelayanan terbaik dalam menampung dan menyalurkan
                                     aspirasi mahasiswa Politeknik Statistika STIS kepada pihak yang bersangkutan sesuai
-                                    kebutuhan.</p>
+                                    kebutuhan.
+                                </p>
                                 <p class="mb-0">4. Melaksanakan fungsi pengawasan dan koordinasi serta berkolaborasi
                                     yang bersifat berkelanjutan dengan Senat Mahasiswa Politeknik Statistika STIS</p>
                                 <p class="mb-0">5. Mewujudkan keanggotaan Dewan Perwakilan Mahasiswa yang dinamis dan
@@ -1624,81 +1629,80 @@
                         </div>
                         <!-- /.container-fluid -->
                     </div>
+                    <!-- End of container-fluid-->
                 </div>
 
-
-
-
-
-
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; 2020 - 2023 Website DPM Politeknik Statistika STIS</span>
-                            <br>
-                            <small>contact us : dpm@stis.ac.id</small>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End of Footer -->
-
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; 2020 - 2023 Website DPM Politeknik Statistika STIS</span>
+                        <br>
+                        <small>contact us : dpm@stis.ac.id</small>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Content Wrapper -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+    </div>
+    <!-- End of Page Wrapper -->
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
-                    </div>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/datatables/dataTables.responsive.min.js"></script>
-        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-        <script src="vendor/datatables/responsive.bootstrap4.min.js"></script>
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/dataTables.responsive.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/datatables/responsive.bootstrap4.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
+    <!-- Custom scripts for all pages-->
 
-        <script src="js/sb-admin-2.min.js"></script>
-        <script src="js/changeaccess.js"></script>
-        <script src="js/tampilmodal.js"></script>
-        <script src="js/arsipsistembaru.js"></script>
-        <script src="js/statistikreimburse.js"></script>
-        <script src="js/script.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/changeaccess.js"></script>
+    <script src="js/tampilmodal.js"></script>
+    <script src="js/arsipsistembaru.js"></script>
+    <script src="js/statistikreimburse.js"></script>
+    <script src="js/script.js"></script>
 
-        <!-- SWEET ALERT -->
-        <script src="swal/sweetalert2.all.min.js"></script>
-        <script src="swal/myscript.js"></script>
+    <!-- SWEET ALERT -->
+    <script src="swal/sweetalert2.all.min.js"></script>
+    <script src="swal/myscript.js"></script>
 
-        <!-- PENGUMUMAN ADMIN -->
-        <script src="js/tampilpengumumandiadmin.js"></script>
+    <!-- PENGUMUMAN ADMIN -->
+    <script src="js/tampilpengumumandiadmin.js"></script>
 
 </body>
 

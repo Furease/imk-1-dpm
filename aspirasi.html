@@ -37,101 +37,82 @@
     <div id="wrapper">
         <input type="hidden" class="base_url" data-baseurl="">
         <!-- Sidebar -->
-        <div class="sidebar">
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                    <div class="sidebar-brand-icon">
-                        <!-- <i class="fas fa-bullhorn"></i> -->
-                        <img class="img-profile rounded-circle" width="50px"
-                            src="https://dpm.stis.ac.id/assets/img/profile/dpm.png">
-                    </div>
-                    <div class="sidebar-brand-text mx-3">SiAspiman</div>
-                </a>
-
-
-
-                <!-- Divider -->
-                <hr class="sidebar-divider ">
-
-                <div id="query-menu">
-                    <!-- melakukan query dari menu -->
-
-
-                    <!-- LOOPING MENU -->
-                    <div class="sidebar-heading">
-                        User </div>
-
-                    <!-- SIAPKAN SUB-MENU SESUAI MENU -->
-                    <div>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item active">
-                            <a class="nav-link pb-0" href="aspirasi.html">
-                                <i class="fas fa-fw fa-bullhorn"></i><span>Aspirasi</span>
-                            </a>
-                        </li>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item">
-                            <a class="nav-link pb-0" href="profile.html">
-                                <i class="fas fa-fw fa-user-edit"></i><span>Edit Profile</span>
-                            </a>
-                        </li>
-
-                    </div>
-
-                    <!-- Divider -->
-                    <hr class="sidebar-divider mt-3">
-
-                    <div class="sidebar-heading">
-                        DPM </div>
-
-                    <!-- SIAPKAN SUB-MENU SESUAI MENU -->
-                    <div>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item">
-                            <a class="nav-link pb-0" href="index.html">
-                                <i class="fas fa-fw fa-gavel"></i><span>Beranda</span>
-                            </a>
-                        </li>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item">
-                            <a class="nav-link pb-0" href="profile_dpm.html">
-                                <i class="fas fa-fw fa-users"></i><span>Profil DPM</span>
-                            </a>
-                        </li>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item">
-                            <a class="nav-link pb-0" href="arsip.html">
-                                <i class="fas fa-fw fa-folder-open"></i><span>Arsip Dokumen</span>
-                            </a>
-                        </li>
-
-                        <!-- Nav Item - Dashboard -->
-                        <li class="nav-item">
-                            <a class="nav-link pb-0" href="galeri.html">
-                                <i class="fas fa-fw fa-image"></i><span>Galeri DPM</span>
-                            </a>
-                        </li>
-
-                    </div>
-
-                    <!-- Divider -->
-                    <hr class="sidebar-divider mt-3">
-
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <!-- <i class="fas fa-bullhorn"></i> -->
+                    <img class="img-profile rounded-circle" width="50px" src="img/dpm.png">
                 </div>
+                <div class="sidebar-brand-text mx-3">Si Aspiman</div>
+            </a>
 
-            </ul>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
 
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                DPM
+            </div>
+
+            <!-- Nav Item - Dashboard -->
+
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile_dpm.html">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Profil DPM</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arsip.html">
+                    <i class="fas fa-fw fa-folder-open"></i>
+                    <span>Arsip Dokumen</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeri.html">
+                    <i class="fas fa-fw fa-image"></i>
+                    <span>Galeri DPM</span>
+                </a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                User
+            </div>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="aspirasi.html">
+                    <i class="fas fa-fw fa-bullhorn"></i>
+                    <span>Aspirasi</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                                        <a class="nav-link" href="profile.html">
+                                            <i class="fas fa-fw fa-user-edit"></i>
+                                            <span>Edit Profile</span>
+                                        </a>
+                                    </li> -->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+        </ul>
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -167,22 +148,18 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="user.html">
-                                    <i class="fas fa-fw fa-id-badge mr-2 text-gray-400"></i>
-                                    My Profile
+                                    <i class="fas fa-fw fa-id-badge mr-2 text-gray-400"></i> My Profile
                                 </a>
                                 <a class="dropdown-item" href="profile.html">
-                                    <i class="fas fa-fw fa-user-edit mr-2 text-gray-400"></i>
-                                    Edit Profile
+                                    <i class="fas fa-fw fa-user-edit mr-2 text-gray-400"></i> Edit Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-fw fa-key mr-2 text-gray-400"></i>
-                                    Change Password
+                                    <i class="fas fa-fw fa-key mr-2 text-gray-400"></i> Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="login.html" data-toggle="modal"
                                     data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
                                 </a>
                             </div>
                         </li>
@@ -191,7 +168,8 @@
 
                 </nav>
                 <!-- End of Topbar -->
-                <div id="main-context"><!-- Begin Page Content -->
+                <div id="main-context">
+                    <!-- Begin Page Content -->
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
@@ -202,14 +180,14 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-body">
                                         <p>Fitur Aspirasi merupakan wadah bagi mahasiswa untuk memberikan <span
-                                                class="font-weight-bold">sambatan</span>
-                                            terbaik mereka. Sambatan itu sendiri merupakan kritik atau saran yang
-                                            ditujukan kepada <span class="font-weight-bold">"Kampus, Ormawa, Pengurus
+                                                class="font-weight-bold">sambatan</span> terbaik mereka. Sambatan itu
+                                            sendiri merupakan kritik atau saran yang ditujukan kepada <span
+                                                class="font-weight-bold">"Kampus, Ormawa, Pengurus
                                                 Tingkat, dan Lainnya"</span>.
                                         </p>
                                         <p>Silahkan mengisi <span class="font-weight-bold">"Form Sambatan"</span> dengan
-                                            harapan kritik yang diberikan dapat membangun atau memberikan
-                                            dampak positif bagi kita semua.
+                                            harapan kritik yang diberikan dapat membangun atau memberikan dampak positif
+                                            bagi kita semua.
                                         </p>
                                         <p>
                                             <span class="font-weight-bold" style="color:mediumblue;">Selamat
@@ -270,9 +248,9 @@
                 </div>
                 <!-- /.container-fluid -->
 
-
-                <!-- End of Main Content -->
             </div>
+            <!-- End of Main Content -->
+
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
