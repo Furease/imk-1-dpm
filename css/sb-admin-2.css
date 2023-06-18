@@ -69,6 +69,19 @@ body {
   background-color: #fff;
 }
 
+.crop {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 150;
+  height: 150;
+  margin: -150px 0px 0px -150px;
+}
+
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -79,7 +92,7 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -359,8 +372,8 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, h7,
+.h1, .h2, .h3, .h4, .h5, .h6, .h7 {
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -388,6 +401,9 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+h7, .h7 {
+  font-size: 0.75rem;
 }
 
 .lead {
@@ -9981,6 +9997,14 @@ a:focus {
 
 .bg-gray-900 {
   background-color: #3a3b45 !important;
+}
+
+.bg-abu {
+  background-color: rgb(217, 217, 217, 0.45) !important;
+}
+
+.bg-birulaut{
+  background-color: rgb(205, 218, 255, 80);
 }
 
 .o-hidden {
