@@ -80,16 +80,12 @@ body {
     background-color: #fff;
 }
 
-.crop {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-}
-
-.crop img {
-    width: 150;
-    height: 150;
-    margin: -150px 0px 0px -150px;
+.crop img{
+        max-inline-size: 100%;
+        block-size: auto;
+        aspect-ratio: 2/1.5;
+        object-fit: cover;
+        object-position: top center;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

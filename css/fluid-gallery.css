@@ -1,86 +1,80 @@
-/* body {
-    background-color: #434c50;
-    min-height: 100vh;
-    font: normal 16px sans-serif;
-    padding: 40px 0;
-} */
-
-.container.gallery-container {
-    background-color: #f8f9fc;
-    color: #35373a;
-    min-height: 100vh;
-    padding: 0px 0px;
-}
-
-.gallery-container h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
-}
-
-.gallery-container p.page-description {
-    text-align: center;
-    margin: 25px auto;
-    font-size: 18px;
-    color: #999;
-}
-
-.tz-gallery {
-    padding: 0px;
-    
-}
-
-/* Override bootstrap column paddings */
-.tz-gallery .row > div {
-    padding: 2px;
-}
-
-.tz-gallery .lightbox img {
-    width: 94%;
-    position: relative;
-}
-
-.tz-gallery .lightbox:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -10px;
-    margin-left: -55px;
-    opacity: 0;
-    color: #fff;
-    font-size: 20px;
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    content: 'Lihat Gambar';
-    pointer-events: none;
-    z-index: 9000;
-    transition: 0.4s;
-}
-
-
-.tz-gallery .lightbox:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100.5%;
-    height: 150%;
-    opacity: 0;
-    background-color: rgba(46, 132, 206, 0.7);
-    content: '';
-    transition: 0.4s;
-}
-
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
+   .image-gallery {
     opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .text-gallery {
+    bottom: 2%;
+    right: 1%;
+    opacity: 1;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-gallery img {
+    width: 20px;
+    height: 20px;
+  }
+  
+/* Style the Image Used to Trigger the Modal */
+
+/* The Modal (background) */
+#image-viewer-g {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content-g {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+.modal-content-g { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+#image-viewer-g .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#image-viewer-g .close:hover,
+#image-viewer-g .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+@media only screen and (max-width: 700px){
+  .modal-content-g {
+      width: 100%;
+  }
 }
