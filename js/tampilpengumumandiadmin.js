@@ -11,3 +11,8 @@ $(document).ready(function () {
 		$(this).children('i').toggleClass('fa-chevron-circle-up fa-chevron-circle-right');
 	  });
 });
+
+
+$('a.struktur').addClass('border-0 rounded-lg');
+$('span.struktur').addClass("h6 text-white");	
+$('span.struktur').children('i').removeClass("fa-fw").addClass('fa-lg');

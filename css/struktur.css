@@ -61,7 +61,7 @@ ul.struktur {
 ul.struktur a.struktur {
     display: block;
     background: rgb(124, 207, 255);
-    border: 4px solid #525252;
+    border: 2px solid #1F1F1F;
     text-align: center;
     overflow: hidden;
     font-size: .7em;
@@ -78,7 +78,7 @@ ul.struktur a.struktur {
 
 @media print {
     ul.struktur a.struktur {
-        border: 4px solid #000;
+        border: 2px solid #1F1F1F;
     }
 }
 
@@ -108,7 +108,9 @@ ul.departments li.department span.struktur {
 }
 
 .director>li.struktur>a.struktur {
-    width: 50%;
+    color: #ffffff;
+    background-color: #4E73DF;
+    width: 30%;
     margin: 0 auto 0px auto;
 }
 
@@ -116,17 +118,28 @@ ul.departments li.department span.struktur {
     content: "";
     display: block;
     width: 0;
-    height: 130px;
-    background: red;
-    border-left: 4px solid #525252;
+    height: 160px;
+    border-left: 2px solid #1F1F1F;
     left: 50%;
     z-index: 8;
     position: relative;
 }
 
+.ketua:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 40px;
+    border-left: 2px solid #1F1F1F;
+    left: 50%;
+    z-index: 8;
+    position: relative;
+}
+
+
 @media print {
     .subdirector:after {
-        border-left: 4px solid #000;
+        border-left: 2px solid #1F1F1F;
     }
 }
 
@@ -138,53 +151,59 @@ ul.departments li.department span.struktur {
 
 .subdirector>li.struktur:first-child,
 .departments>li.struktur:first-child {
-    width: 18.59894921190893%;
+    width: 25%;
     height: 64px;
     margin: 0 auto 92px auto;
     padding-top: 25px;
-    border-bottom: 4px solid #525252;
+    border-top: 2px solid #1F1F1F;
     z-index: 1;
 }
 
 @media print {
     .subdirector>li.struktur:first-child,
     .departments>li.struktur:first-child {
-        border-bottom: 4px solid #000;
+        border-bottom: 2px solid #1F1F1F;
     }
 }
 
 .subdirector>li.struktur:first-child {
     float: right;
-    right: 27.2%;
-    border-left: 4px solid #525252;
+    right: 24.8%;
+    top: 30px;
+    border-right: 2px solid #1F1F1F;
 }
 
 @media print {
     .subdirector>li.struktur:first-child {
-        border-left: 4px solid black;
+        border-left: 2px solid #1F1F1F;
     }
 }
 
 .departments>li.struktur:first-child {
     float: left;
-    left: 27.2%;
+    left: 25%;
     top: -130px;
-    border-right: 4px solid #525252;
+    border-left: 2px solid #1F1F1f;
 }
 
 @media print {
     .departments>li.struktur:first-child {
-        border-right: 4px solid black;
+        border-right: 2px solid #1F1F1F;
     }
 }
 
 .subdirector>li.struktur:first-child a,
 .departments>li.struktur:first-child a {
     width: 100%;
+    background-color: #7D9EFF;
+}
+
+.departments>li.struktur:first-child a{
+    left: -50%;
 }
 
 .subdirector>li.struktur:first-child a {
-    left: 25px;
+    left: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -220,21 +239,20 @@ ul.departments li.department span.struktur {
     content: "";
     display: block;
     position: absolute;
-    width: 81.1%;
+    width: 75%;
     height: 26px;
-    border-top: 4px solid #525252;
-    border-right: 4px solid #525252;
-    border-left: 4px solid #525252;
+    border-top: 2px solid #1F1F1F;
+    border-right: 2px solid #1F1F1f;
     margin: 0 auto;
     top: 0px;
-    left: 7.3%
+    left: 10.7%
 }
 
 @media print {
     .departments:after {
-        border-top: 4px solid #000;
-        border-right: 4px solid #000;
-        border-left: 4px solid #000;
+        border-top: 2px solid #1F1F1F;
+        border-right: 2px solid #1F1F1F;
+        border-left: 2px solid #1F1F1F;
     }
 }
 
@@ -259,21 +277,45 @@ ul.departments li.department span.struktur {
     position: absolute;
     width: 0;
     height: 22px;
-    border-left: 4px solid #525252;
+    border-left: 2px solid #1F1F1F;
     z-index: 1;
     top: -22px;
     left: 50%;
     margin-left: -4px;
 }
+.department.dep-b::before,.department.dep-e::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 142px;
+    border-left: 2px solid #1F1F1F;
+    z-index: 1;
+    top: -142px;
+    left: 50%;
+    margin-left: -4px;
+}
 
+.department.dep-b,.department.dep-e{
+    position: relative;
+    top:-14px;
+}
+.department.dep-c,.department.dep-f{
+    position: relative;
+    left:-25px;
+}
+.department.dep-d,.department.dep-a{
+    position: relative;
+    right:-25px;
+}
 @media print {
     .department:before {
-        border-left: 4px solid black;
+        border-left: 2px solid #1F1F1F;
     }
 }
 
 .department {
-    border-left: 4px solid #525252;
+    border-left: 2px solid #1F1F1F;
     width: 15%;
     top: -134px;
     float: left;
@@ -283,7 +325,7 @@ ul.departments li.department span.struktur {
 
 @media print {
     .department {
-        border-left: 4px solid #000;
+        border-left: 2px solid #1F1F1F;
     }
 }
 
@@ -303,7 +345,6 @@ ul.departments li.department span.struktur {
         position: absolute;
         width: 0;
         height: 60px;
-        border-left: 4px solid #525252;
         z-index: 1;
         top: -60px;
         left: 0%;
@@ -323,10 +364,6 @@ ul.departments li.department span.struktur {
     opacity: 0.8;
 }
 
-.department i.fas {
-    font-size: 2vh;
-}
-
 .department>ul.struktur {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -334,13 +371,13 @@ ul.departments li.department span.struktur {
 
 .department li.struktur {
     padding-left: 25px;
-    border-bottom: 4px solid #525252;
+    border-bottom: 2px solid #1F1F1F;
     height: 80px;
 }
 
 @media print {
     .department li.struktur {
-        border-bottom: 4px solid #000;
+        border-bottom: 2px solid #1F1F1F;
     }
 }
 
@@ -377,27 +414,28 @@ ul.departments li.department span.struktur {
 /* Department/ section colors */
 
 .department.dep-a a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-b a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-c a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-d a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-e a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
 }
 
 .department.dep-f a.struktur {
-    background: #AAD4E7;
+    background: #72BBFF;
+    left: -10%;
 }
 
 .name-person {
