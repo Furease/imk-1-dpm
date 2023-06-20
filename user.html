@@ -146,8 +146,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Achmad Arfiandis Abdi
                                     Pradana</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/default.png">
+                                <img class="img-profile rounded-circle" src="img/default.png">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -182,8 +181,7 @@
                             <div class="card shadow mb-3">
                                 <div class="card-header">
                                     <div class="text-center m-4">
-                                        <img src="img/default.png"
-                                            class="card-img img-fluid rounded-circle border"
+                                        <img src="img/default.png" class="card-img img-fluid rounded-circle border"
                                             style="background-image: cover; max-width: 20em;">
                                     </div>
                                 </div>
@@ -253,16 +251,16 @@
                                 <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
                             </div>
                             <form action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
-                                <div class="form-group row">
-                                    <label for="nohp" class="col-sm-2 col-form-label">Nomor Handphone</label>
-                                    <div class="col-sm-10">
+                                <div class="form-group ">
+                                    <label for="nohp" class=" col-form-label">Nomor Handphone</label>
+                                    <div class="">
                                         <input type="text" class="form-control" id="nohp" name="nohp"
                                             value="62895367350752">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="provider" class="col-sm-2 col-form-label">Provider</label>
-                                    <div class="col-sm-10">
+                                <div class="form-group ">
+                                    <label for="provider" class=" col-form-label">Provider</label>
+                                    <div class="">
                                         <select name="provider" id="provider" value="Tri"
                                             class="form-control selectpicker">
                                             <option value="Axis">Axis</option>
@@ -275,24 +273,22 @@
                                         </select>
                                     </div>
                                 </div>
-                                <h4>Untuk rekening, perhatikan poin-poin berikut:</h4>
-                                <p class="p-2 mt-0 rounded text-info"
-                                    style="font-size: 15px; background-color: #f8f9fc">
-                                    Rekening mahasiswa harus atas nama pribadi.<br> Pastikan rekening masih aktif.
-                                    <br> Pastikan isian rekening sudah benar yang mencakup nomor rekening, nama bank
-                                    yang digunakan dan atas nama bank.
-                                </p>
-                                <div class="form-group row">
-                                    <label for="provider" class="col-sm-2 col-form-label">Nomor Rekening</label>
-                                    <div class="col-sm-10">
+
+                                <div class="form-group ">
+                                    <label for="provider" class="col-form-label pb-0">Nomor Rekening</label>
+                                    <p class="p-0 mb-1 rounded text-danger"
+                                        style="font-size: 15px; background-color: #f8f9fc">
+                                        Pastikan rekening masih aktif
+                                    </p>
+                                    <div class="">
                                         <input type="text" class="form-control" id="norek" name="norek"
                                             value="0332422101">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="bank" class="col-sm-2 col-form-label"
+                                <div class="form-group ">
+                                    <label for="bank" class=" col-form-label"
                                         aria-label=".form-select-lg example">Bank</label>
-                                    <div class="col-sm-10">
+                                    <div class="">
                                         <select name="bank" id="bank" class="form-control selectpicker">
                                             <option selected="" disabled="">Pilih bank</option>
                                             <option value="BRI">BRI</option>
@@ -305,24 +301,28 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row d-none" id="bank-lain">
-                                    <label for="dari" class="col-sm-2 col-form-label">Nama Bank</label>
-                                    <div class="col-sm-10">
+                                <div class="form-group  d-none" id="bank-lain">
+                                    <label for="dari" class=" col-form-label">Nama Bank</label>
+                                    <div class="">
                                         <input type="text" class="form-control" name="banklain" id="bank-lain-form"
                                             value="">
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="provider" class="col-sm-2 col-form-label">Atas Nama Rekening</label>
-                                    <div class="col-sm-10">
+                                <div class="form-group ">
+                                    <label for="provider" class="pb-0 col-form-label">Atas Nama Rekening</label>
+                                    <p class="p-0 m-0 rounded text-danger"
+                                        style="font-size: 15px; background-color: #f8f9fc">
+                                        Pastikan rekening atas nama pribadi
+                                    </p>
+                                    <div class="">
                                         <input type="text" class="form-control" id="atas_nama_bank"
                                             name="atas_nama_bank" value="MOCH DAFFA' AL FARIS">
                                     </div>
                                 </div>
 
                                 <div class="form-group row justify-content-end text-right">
-                                    <div class="col-sm-10">
+                                    <div class="">
                                         <button type="submit" class="btn btn-primary"><span
                                                 class="ml-4 mr-4">Simpan</span></button>
                                     </div>
