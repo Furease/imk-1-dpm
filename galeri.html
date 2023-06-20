@@ -192,7 +192,7 @@
 
                         <div class="container">
                             <div class="card-columns">
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9828.jpg "
@@ -202,7 +202,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9732.jpg "
@@ -212,7 +212,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9724.jpg "
@@ -222,7 +222,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9723.jpg "
@@ -232,7 +232,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9722.jpg "
@@ -242,7 +242,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 gallery-out bg-birulaut">
                                     <div class="lightbox crop gallery-box">
                                         <img class="card-img"
                                             src="https://dpm.stis.ac.id/assets/img/galeri/f/IMG_9721.jpg "
@@ -283,7 +283,9 @@
 
     <!-- image viewer -->
     <div id="image-viewer-g">
-        <span class="close">&times;</span>
+        <i class="g-close fas fa-times"></i>
+        <i class="g-expand fas fa-expand"></i>
+        <i class="g-zoom fas fa-search-plus"></i>
         <img class="modal-content-g" id="full-image-g">
     </div>
 
@@ -311,9 +313,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/datatables/dataTables.responsive.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="vendor/datatables/responsive.bootstrap4.min.js"></script>
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -339,7 +339,7 @@
             $('#image-viewer-g').show();
         });
 
-        $("#image-viewer-g .close").click(function () {
+        $("#image-viewer-g .g-close").click(function () {
             $('#image-viewer-g').hide();
         });
     </script>
