@@ -63,3 +63,49 @@ $(function () {
 
     
 });
+
+$(document).ready(function () {
+    $('#tabelsaya').DataTable({
+        dom: '<"top"lf>rt<"bottom"ip><"clear">',
+        language:{
+            lengthMenu:'Tampilkan _MENU_ data',
+            filter:'Cari: _SEARCH_',
+            info:'Menampilkan halaman _PAGE_ dari _PAGES_'
+        }
+    });    
+    $('#tabelsayu').DataTable({
+        dom: '<"top"lf>rt<"bottom"ip><"clear">',
+        language:{
+            lengthMenu:'Tampilkan _MENU_ data',
+            filter:'Cari: _SEARCH_',
+            info:'Menampilkan halaman _PAGE_ dari _PAGES_'
+        }
+    });
+    $('#tabelsayu th:first').css('width','400.688px')    
+    $('#tabelsayu th:eq(1)').css('width','346.828px')    
+    $('#tabelsayu th:eq(2)').css('width','206.609px')    
+    $('[id^=tabelsayu]').addClass('d-none');
+    $('select,#tabelsaya_filter label input').addClass('rounded-lg').
+    css({'border':'2px solid #A6B9EF'});
+    $('th').addClass('text-center');   
+    $('td:nth-child(3)').on('click', function(){
+        $("[id^=tabelsaya]").hide();
+        $("[id^=tabelsayu]").toggleClass('d-none d-block');
+        $("#back-btn").toggleClass('d-none d-block');
+    });
+    $('#back-btn').on('click', function(){
+        $("[id^=tabelsaya]").show();
+        $("[id^=tabelsayu]").toggleClass('d-none d-block');
+        $(this).toggleClass('d-none d-block');
+    });
+});
+
+$(document).ready(function() {
+    var bulan = ['Januari','Februari','Maret','April','Mei','Juni','Juli','September','Oktober',"November",'Desember']
+
+    $('td:nth-child(2)').each(function () {
+        a = new Date($(this).html())
+        b = bulan[a.getMonth()-1];        
+        $(this).html((String(`${a.getDate()} ${b} ${a.getFullYear()}`)));
+    })
+})
