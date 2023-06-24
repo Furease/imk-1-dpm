@@ -7,8 +7,8 @@
     backface-visibility: hidden;
   }
 
-.gallery-box {
-  margin: 10px;
+.gallery-out {
+  padding: 10px;
 }
 
   .text-gallery {

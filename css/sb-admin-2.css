@@ -6814,6 +6814,17 @@ button.bg-warning:focus {
     background-color: #f4b30d !important;
 }
 
+.bg-navy {
+    background-color: #0b0047 !important;
+}
+
+a.bg-navy:hover,
+a.bg-navy:focus,
+button.bg-navy:hover,
+button.bg-navy:focus {
+    background-color: #1b1152 !important;
+}
+
 .bg-danger {
     background-color: #e74a3b !important;
 }
