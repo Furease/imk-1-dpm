@@ -24,7 +24,7 @@
  */
 
 .cf {
-    *zoom: 1;
+    zoom: 1;
 }
 
 
@@ -449,10 +449,12 @@ ul.departments li.department span.struktur {
 }
 
 .photo-person {
-    max-width: 60%;
-    height: 200px;
+    width: 247.28px;
+height: 287.738px;
     box-shadow: 4px 4px 9px -4px rgb(0 0 0 / 60%);
-    border-radius: 2px;
+    border-bottom : 0;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
 }
 
 .photo-person:hover {
@@ -507,3 +509,58 @@ ul.departments li.department span.struktur {
         max-width: 100%;
     }
 }
+
+.modal-title h3{
+    font-weight: bold;
+    color: black;
+}
+.modal-content{
+    width: 782px;
+    border-radius: 10px;
+    border: 0;
+}
+.modal-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dbdbdb;
+    align-content: center;
+}
+
+.modal-body{
+    background-color: #eaeaea;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+hr{
+    border-top: 1px solid #A6B6E5;
+}
+.popup-footer{
+    text-align: center;
+    color: white;
+    background-color: #4E73DF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.popup-footer p{
+    margin-bottom: 0;
+}
+.nim{
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-family: Barlow;
+    font-weight: lighter;
+    font-style: italic;
+}
+.nama{
+    color: #FFF;
+text-align: center;
+font-size: 15px;
+font-family: Raleway;
+font-weight: bold;
+}
+
+.modal-body .card{
+    border-radius: 10px;
+}
+

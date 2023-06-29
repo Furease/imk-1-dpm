@@ -16,3 +16,9 @@ $(document).ready(function () {
 $('a.struktur').addClass('border-0 rounded-lg');
 $('span.struktur').addClass("h6 text-white");	
 $('span.struktur').children('i').removeClass("fa-fw").addClass('fa-lg');
+$('.modal-title').addClass('col-auto');
+$('.close').addClass('p-0 pr-1');
+$('.modal-body').addClass('pt-0');
+$('.modal-body .card-body').addClass('pb-0');
+$('.modal-title').parent('.row').addClass("mt-3");
+$('.row').has('.card.mb-2').addClass("justify-content-around mx-5");
