@@ -17,9 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
 
 </head>
 
@@ -136,8 +138,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle border"
-                                    src="img/default.png">
+                                <img class="img-profile rounded-circle border" src="img/default.png">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -164,7 +165,7 @@
                         <div class="media-body">
                             <div class="media mt-3">
                                 <div class="media-body">
-                                    <h3 class="mx-0"><b>Selamat datang,</b> </h3>
+                                    <h2 class="mx-0"><b>Selamat datang,</b> </h2>
                                     <h4 class="mb-3"> Douglas McGee </h4>
                                     <!-- <i>Mari berkenalan bersama kami.</i>
                                     <p>
@@ -193,14 +194,14 @@
                     </div>
 
                     <p>
-                        <small>420 sambatan</small>
+                        <b>420 sambatan</b>
                     </p>
 
                     <!-- Card Content -->
                     <div class="row mb-4">
 
                         <!-- Kampus -->
-                        <div class="col-xl-3 col-md-6 mb-2">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card shadow h-100 py-2 bg-abu">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -220,7 +221,7 @@
                         </div>
 
                         <!-- Website DPM -->
-                        <div class="col-xl-3 col-md-6 mb-2">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card shadow h-100 py-2 bg-abu">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -240,7 +241,7 @@
                         </div>
 
                         <!-- Ormawa  -->
-                        <div class="col-xl-3 col-md-6 mb-2">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card shadow h-100 py-2 bg-abu">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -265,7 +266,7 @@
                         </div>
 
                         <!-- Pengurus Tingkat -->
-                        <div class="col-xl-3 col-md-6 mb-2">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card shadow h-100 py-2 bg-abu">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -283,7 +284,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -296,15 +297,35 @@
 
                         <div class="col-sm-auto align-self-center"><b>Berita DPM</b></div>
                         <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
+                        <div class="col-sm-auto align-self-center dropdown my-2">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bulan
+                            </button>
+                            <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Januari</a>
+                                <a class="dropdown-item" href="#">Februari</a>
+                                <a class="dropdown-item" href="#">Maret</a>
+                                <a class="dropdown-item" href="#">April</a>
+                                <a class="dropdown-item" href="#">Mei</a>
+                                <a class="dropdown-item" href="#">Juni</a>
+                                <a class="dropdown-item" href="#">Juli</a>
+                                <a class="dropdown-item" href="#">Agustus</a>
+                                <a class="dropdown-item" href="#">September</a>
+                                <a class="dropdown-item" href="#">Oktober</a>
+                                <a class="dropdown-item" href="#">November</a>
+                                <a class="dropdown-item" href="#">Desember</a>
+                            </div>
+                        </div>
                         <div class="col-sm-auto align-self-center dropdown">
                             <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Periode
+                                Tahun
                             </button>
                             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">2022/2023</a>
-                                <a class="dropdown-item" href="#">2021/2022</a>
-                                <a class="dropdown-item" href="#">2020/2021</a>
+                                <a class="dropdown-item" href="#">2020</a>
+                                <a class="dropdown-item" href="#">2021</a>
+                                <a class="dropdown-item" href="#">2022</a>
                             </div>
                         </div>
                     </div>
@@ -319,25 +340,28 @@
                                             alt="">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="text-center">SIDANG UMUM II DEWAN PERWAKILAN
-                                            MAHASISWA POLSTAT STIS T.A. 2022/2023</h6>
-                                        <p class="card-text">Dalam rangka Penetapan Anggaran Imapolstat dalam Sidang
-                                            Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian untuk hadir pada
-                                            Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
+                                        <h6 class="text-center">SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS
+                                            T.A. 2022/2023</h6>
+                                        <!-- limit the paragraph so it doest take too much space -->
+                                        <p class="card-text limited-text">Dalam rangka Penetapan Anggaran Imapolstat
+                                            dalam Sidang Umum II DPM 2022/2023, Kami mengundang rekan-rekan sekalian
+                                            untuk hadir pada Sidang Umum II DPM 2022/2023 yang akan dilaksanakan
                                             pada:http://127.0.0.1:3000/aspirasi.html
                                             Hari,Tanggal: Senin, Selasa, dan Kamis, 27-28 Februari dan 2 Maret 2023
                                             Waktu: 16.15 WIB - selesai Tempat : Auditorium Polstat STIS DC : PDA
-                                            Diwajibkan kepada seluruh anggota DPM 2022/2023</p>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="bg-birulaut list-group-item align-self-center">
-                                                    <button type="button" class="border border-light badge badge-primary view"
-                                                        data-target="#tampilPengumumanAdminModal"
-                                                        data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023"
-                                                        data-toggle="modal">Selengkapnya</button>
-                                                </li>
-                                            </ul>
+                                            Diwajibkan kepada seluruh anggota DPM 2022/2023
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="bg-birulaut list-group-item align-self-center">
+                                                <button type="button"
+                                                    class="border border-light badge badge-primary view"
+                                                    data-target="#tampilPengumumanAdminModal"
+                                                    data-alt="SIDANG UMUM II DEWAN PERWAKILAN MAHASISWA POLSTAT STIS T.A. 2022/2023"
+                                                    data-toggle="modal">Selengkapnya</button>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -415,9 +439,9 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                </div> -->
+                </div>
                 <!-- /.container-fluid -->
 
                 <!-- Carousel gambar -->
@@ -538,10 +562,19 @@
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; 2020 - 2023 Website DPM Politeknik Statistika STIS</span>
-                        <br>
-                        <small>contact us : dpm@stis.ac.id</small>
+                    <div class="text-center mb-2">
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-brands-instagram text-black-50"></i>
+                        </a>
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-rr-envelope text-black-50"></i>
+                        </a>
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-brands-twitter text-black-50"></i>
+                        </a>
+                    </div>
+                    <div class="copyright text-center">
+                        <span>Copyright &copy; 2023 Website Kelompok 1 IMK 3SI1</span>
                     </div>
                 </div>
             </footer>
@@ -600,14 +633,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
 </body>
 
 </html>

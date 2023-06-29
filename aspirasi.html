@@ -17,16 +17,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="css/struktur.css" rel="stylesheet">
-    <link href="css/fluid-gallery.css" rel="stylesheet">
 
-    <link href="https://dpm.stis.ac.id/assets/vendor/datatables2/dataTables.bootstrap4.min.css" rel="stylesheet"
-        type="text/css">
-    <link href="https://dpm.stis.ac.id/assets/vendor/datatables2/responsive.bootstrap4.min.css" rel="stylesheet"
-        type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
 </head>
@@ -146,8 +143,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Achmad Arfiandis Abdi
                                     Pradana</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/default.png">
+                                <img class="img-profile rounded-circle" src="img/default.png">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -172,11 +168,16 @@
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-4 text-gray-800">Aspirasi/Sambatan</h1>
+                        <div class="row mb-4">
+                            <h1 class="align-self-center h3 mx-2 text-gray-800">SI ASPIMAN</h1>
+                            <div class="rounded-circle bg-navy mr-2"><img class="align-self-center"
+                                    style="width: 40px; height: 40px;" src="img/content_canvas.png" alt="logo"></div>
+                            <div class="col align-self-center border-top border-primary d-none d-sm-block"></div>
+                        </div>
 
                         <div class="row">
                             <div class="col-lg-4">
-                                <div class="card shadow mb-4">
+                                <div class="card bg-birulaut mb-4">
                                     <div class="card-body">
                                         <p>Fitur Aspirasi merupakan wadah bagi mahasiswa untuk memberikan <span
                                                 class="font-weight-bold">sambatan</span> terbaik mereka. Sambatan itu
@@ -188,33 +189,34 @@
                                             harapan kritik yang diberikan dapat membangun atau memberikan dampak positif
                                             bagi kita semua.
                                         </p>
-                                        <p>
-                                            <span class="font-weight-bold" style="color:mediumblue;">Selamat
-                                                bersambat-ria!</span>
-                                        </p>
+                                        <img style="width: 200px;" class="align-self-center" src="img/asp 1.png"
+                                            alt="logo2">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-8">
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Form Sambatan</h6>
+                                <div class="card mb-4">
+                                    <div class="card-header bg-white py-3">
+                                        <div class="row">
+                                            <h4 class="align-self-center text-gray-800 mx-2">Form Sambatan</h4>
+                                            <div
+                                                class="col align-self-center border-top mx-2 border-primary d-none d-sm-block">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="card-body">
-
                                         <form action="" method="post">
-                                            <div class="form-group row">
-                                                <label for="dari" class="col-sm-2 col-form-label">Nama Pengirim</label>
-                                                <div class="col-sm-10">
+                                            <div class="form-group ">
+                                                <div class="col-sm-12">
+                                                    <label for="dari" class="col-form-label">Nama Pengirim</label>
                                                     <input type="text" class="form-control" id="dari" name="dari"
                                                         placeholder="Nama kamu, iya... kamu, boleh nama samaran">
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <label for="untuk" class="col-sm-2 col-form-label">Di tujukan
-                                                    kepada</label>
-                                                <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <label for="untuk" class="col-form-label">Di tujukan kepada</label>
                                                     <select name="untuk" id="untuk" class="form-control">
                                                         <option value="Kampus">Kampus</option>
                                                         <option value="Ormawa">Ormawa</option>
@@ -225,18 +227,21 @@
                                                     <!-- <input type="text" class="form-control" id="untuk" name="untuk"> -->
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <label for="isi" class="col-sm-2 col-form-label">Isi Sambatan</label>
-                                                <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <label for="isi" class="col-form-label">Isi Sambatan</label>
                                                     <textarea type="text" class="form-control" id="isi"
                                                         name="isi"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" name="sambat" class="btn btn-primary float-right"
-                                                    onclick="return confirm('apakah anda yakin ingin sambat tentang hal tersebut?')">
-                                                    Yuk sambat
-                                                </button>
+                                                <div class="col-sm-12">
+                                                    <button type="submit" name="sambat"
+                                                        class="btn btn-primary float-left"
+                                                        onclick="return confirm('apakah anda yakin ingin sambat tentang hal tersebut?')">
+                                                        Yuk sambat
+                                                    </button>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -253,10 +258,19 @@
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; 2020 - 2023 Website DPM Politeknik Statistika STIS</span>
-                        <br>
-                        <small>contact us : dpm@stis.ac.id</small>
+                    <div class="text-center mb-2">
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-brands-instagram text-black-50"></i>
+                        </a>
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-rr-envelope text-black-50"></i>
+                        </a>
+                        <a class="text-decoration-none mx-2" href="">
+                            <i class="fi fi-brands-twitter text-black-50"></i>
+                        </a>
+                    </div>
+                    <div class="copyright text-center">
+                        <span>Copyright &copy; 2023 Website Kelompok 1 IMK 3SI1</span>
                     </div>
                 </div>
             </footer>
@@ -297,9 +311,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/datatables/dataTables.responsive.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="vendor/datatables/responsive.bootstrap4.min.js"></script>
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 

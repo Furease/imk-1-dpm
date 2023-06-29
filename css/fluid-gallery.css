@@ -1,4 +1,4 @@
-   .image-gallery {
+.image-gallery {
     opacity: 1;
     display: block;
     width: 100%;
@@ -7,9 +7,13 @@
     backface-visibility: hidden;
   }
 
+.gallery-out {
+  padding: 10px;
+}
+
   .text-gallery {
-    bottom: 2%;
-    right: 1%;
+    bottom: 15px;
+    right: 15px;
     opacity: 1;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
@@ -25,6 +29,7 @@
   .text-gallery img {
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
   
 /* Style the Image Used to Trigger the Modal */
@@ -57,17 +62,36 @@
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
-#image-viewer-g .close {
+#image-viewer-g .g-close {
   position: absolute;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
   transition: 0.3s;
 }
-#image-viewer-g .close:hover,
-#image-viewer-g .close:focus {
+
+#image-viewer-g .g-zoom {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  color: #f1f1f1;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+#image-viewer-g .g-expand {
+  position: absolute;
+  top: 15px;
+  right: 115px;
+  color: #f1f1f1;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+#image-viewer-g .g-expand:hover,
+#image-viewer-g .g-zoom:hover,
+#image-viewer-g .g-close:hover{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -76,5 +100,6 @@
 @media only screen and (max-width: 700px){
   .modal-content-g {
       width: 100%;
+      padding: 10px 10px;
   }
 }
